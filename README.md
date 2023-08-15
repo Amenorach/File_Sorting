@@ -11,8 +11,7 @@ Project Description: File_Sorting Project is a unique database-driven applicatio
 - [Database](#database)
 - [File Uploads](#file-uploads)
 - [Admin Functionality](#admin-functionality)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
