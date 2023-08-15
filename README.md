@@ -1,6 +1,6 @@
 # File_Sorting
 
-Project Description: Briefly describe what your project does and its key features.
+Project Description: File_Sorting Project is a unique database-driven application designed to simplify file management and sorting for administrators. This project leverages the power of SQL for efficient data storage and retrieval. The standout feature of this project is its innovative approach to file uploads, where every uploaded file is stored in the database using the user's first and last name as identifiers, regardless of the original filename. This approach streamlines the process of file sorting, enabling administrators to quickly locate specific file uploads made by individual users, even when dealing with substantial amounts of data.
 
 ## Table of Contents
 
@@ -16,31 +16,37 @@ Project Description: Briefly describe what your project does and its key feature
 
 ## Introduction
 
-Provide a clear and concise overview of your project. Explain its purpose, goals, and what makes it unique. 
+File Sorting Project aims to address the challenge of managing and organizing large volumes of uploaded files in a database. By utilizing SQL and a unique naming convention, this project offers administrators a powerful tool to efficiently sort and retrieve files based on user-specific criteria.
+
+## Key Features
+User-Centric File Naming: Uploaded files are stored in the database using the user's first and last name, ensuring files are easily attributable and searchable, irrespective of the original filename.
+Effortless File Sorting: Administrators can quickly locate files based on user names, enabling targeted searches within the database.
+Simplified Data Management: With the ability to sort files by user, administrators can manage and organize data more effectively, even when dealing with extensive datasets.
+Streamlined Retrieval: The project's innovative approach reduces the complexity of retrieving specific files, promoting efficient data handling and decision-making.
+Scalable Architecture: Built on robust SQL foundations, the project can be scaled to accommodate increasing file uploads and user interactions.
 
 ## Technologies Used
 
-List the technologies, frameworks, and languages used in your project. For example:
-
-- SQL (Structured Query Language) - for database management
-- [List other technologies here]
+- SQL (Structured Query Language): For database management and data manipulation.
+- PHP: For backend works
+- HTML: For frontend works
+- CSS: For beautifying frontend
 
 ## Installation
 
 Provide step-by-step instructions on how to install and set up your project. Include any prerequisites and dependencies that need to be installed. For example:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-project.git`
-2. Navigate to the project directory: `cd your-project`
+1. Clone the repository: `git clone https://github.com/amenorach/File_Sorting.git`
+2. Navigate to the project directory: `cd File_Sorting`
 3. Install dependencies: `npm install`
-4. [Additional steps if necessary]
 
 ## Usage
 
-Explain how to use your project once it's set up. Provide code examples or screenshots if applicable. 
+The index page contains a form where a user can input their details and also upload their file onto the database.
 
 ## Database
 
-Describe the role of the database in your project and its structure. Highlight any important tables, relationships, or data models. 
+The database forms the core of File_Sorting Project. It stores user information and uploaded files, utilizing a user-centric naming convention.
 
 ## File Uploads
 
@@ -48,18 +54,5 @@ One of the unique features of this project is the way file uploads are handled. 
 
 ## Admin Functionality
 
-Explain how the admin functionality works, particularly in relation to managing and sorting file uploads made by specific users. Highlight any features or tools available to administrators for efficient data handling.
+the admin is able to view the uploads and search for a selected user's details.
 
-## Contributing
-
-Provide guidelines for potential contributors. Explain how they can contribute to your project, submit bug reports, suggest new features, or improve documentation. 
-
-## License
-
-Specify the license under which your project is published. For example:
-
-This project is licensed under the [MIT License](link-to-license).
-
----
-
-Feel free to customize and expand each section according to your project's specifics. Make sure the README provides clear and comprehensive information for users, contributors, and administrators.
