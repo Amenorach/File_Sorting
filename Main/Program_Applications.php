@@ -102,6 +102,7 @@
                 <input type="submit" value="Submit">
             </tr>
         </table>
+        <button><a href="../index.php">Back to Main Page</a></button>
     </form>
 </body>
 
