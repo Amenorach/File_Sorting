@@ -135,78 +135,77 @@
 
 
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="wrapper">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mt-5 mb-3 clearfix">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 style="font-size: 24px;">Program Applicants</h3>
+                                        </div>
+                                        <div class="col-md-6 text-md-right">
+                                            <form action="appsRecord_search.php" method="GET" role="search">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" name="search" placeholder="Search...">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-success" type="submit">
+                                                            <span class="bi bi-search" style="font-size: 20px; color:white;"></span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Email </th>
+                                            <th>Date of Birth</th>
+                                            <th>Gender</th>
+                                            <th>Residential address</th>
+                                            <th>Country</th>
+                                            <th>City</th>
+                                            <th>CV / Resume</th>
+                                            <th>Purpose</th>
+                                            <th>Portfolio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php
+                                        require "../Controllers/tour_ctrl.php";
+                                        $result = get_all_Arecords_ctr();
 
-                <!-- <div class="col-sm-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <span id="boot-icon" class="bi bi-diagram-3-fill" style="font-size: 20px; color:black;"></span>
-                            <h5 class="card-title">
-                                <?php
-                                // $crops = cropsCount_ctr();
-                                // $crops = intval(array_values($crops)[0]);
-                                // echo $crops;
-                                ?>
-                            </h5>
-                            <p class="card-text">Products submitted by AEOs to be sold on the platform.</p>
-
+                                        foreach ($result as $application) {
+                                            echo "<tr>
+                                                    <td>" . $application['app_id'] . "</td>
+                                                    <td>" . $application['app_fname'] . "</td>
+                                                    <td>" . $application['app_lname'] . "</td>
+                                                    <td>" . $application['app_email'] . "</td>
+                                                    <td>" . $application['app_DOB'] . "</td>
+                                                    <td>" . $application['gender'] . "</td>
+                                                    <td>" . $application['app_residence'] . "</td>
+                                                    <td>" . $application['country'] . "</td>
+                                                    <td>" . $application['city'] . "</td>
+                                                    <td>" . $application['app_CV'] . "</td>
+                                                    <td>" . $application['app_sOfPurpose'] . "</td>
+                                                    <td>" . $application['app_Pfolio'] . "</td>
+                                                    <td>";
+                                            "</tr>";
+                                        }
+                                        ?>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </main>
         </div>
-
-        <div class="wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="mt-5 mb-3 clearfix">
-                            <h3 class="pull-left" style="font-size: 24px;">
-                                Orders
-                            </h3>
-                            <a href="record.php" class="btn btn-success pull-right"><span id="boot-icon" class="bi bi-file-earmark-bar-graph record" style="font-size: 20px; color:white; margin-right:5px"></span></i> View Full Report</a>
-                        </div>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Order ID</th>
-                                    <th></th>
-                                    <th>Crop Name</th>
-                                    <th></th>
-                                    <th>Quantity </th>
-                                    <th></th>
-                                    <th>Amount</th>
-                                    <th></th>
-                                    <th>Order Date</th>
-                                    <th></th>
-                                    <th>Location</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
-                                function displayCtr()
-                                {
-                                    // $order = view_recentorder_ctr();
-
-                                    // for ($i = 0; $i < count($order); $i++) {
-                                    //     echo "<tr>";
-                                    //     echo "<td>" . $order[$i]['order_id'] . "<td>";
-                                    //     echo "<td>" . $order[$i]['crop_name'] . "<td>";
-                                    //     echo "<td>" . $order[$i]['qty'] . "<td>";
-                                    //     echo "<td>" . $order[$i]['amount'] . "<td>";
-                                    //     echo "<td>" . $order[$i]['order_date'] . "<td>";
-                                    //     echo "<td>" . $order[$i]['location'] . "<td>";
-                                    // }
-                                }
-                                displayCtr();
-                                ?>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-        </main>
-    </div>
     </div>
 
 
