@@ -99,6 +99,7 @@
                 </td>
             </tr>
             <tr>
+                <td colspan="2">
                 <input type="submit" value="Submit">
             </tr>
         </table>
