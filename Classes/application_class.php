@@ -1,6 +1,7 @@
 <?php
 
-include_once(dirname(__FILE__)) . "../Settings/dbClass.php";
+include_once(dirname(__FILE__) . "/../Settings/dbClass.php");
+
 
 class applicationClass extends db_connection
 {

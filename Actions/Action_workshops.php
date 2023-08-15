@@ -71,13 +71,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Process file upload
     $output_dir = "../workshop_uploads/";
-    $RandomNum = time();
     $ImageName = str_replace(' ', '-', strtolower($_FILES['Pfolio']['name'][0]));
     $ImageType = $_FILES['Pfolio']['type'][0];
     $ImageExt = substr($ImageName, strrpos($ImageName, '.'));
     $ImageExt = str_replace('.', '', $ImageExt);
     $ImageName = preg_replace("/\.[^.\s]{3,4}$/", "", $ImageName);
-    $NewImageName = $ImageName . '-' . $RandomNum . '.' . $ImageExt;
+    $NewImageName = $ImageName . '-' .  $ImageExt;
     $ret[$NewImageName] = $output_dir . $NewImageName;
 
     // Process file upload
@@ -90,10 +89,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $sanitizedLastName = strtolower(preg_replace("/[^a-zA-Z0-9]/", "_", $lname));
 
             // Generate a unique name for the uploaded file
-            $RandomNum = time();
             $ImageNameWithoutExt = $sanitizedFirstName . '_' . $sanitizedLastName;
             $ImageExt = pathinfo($_FILES['Pfolio']['name'][0], PATHINFO_EXTENSION);
-            $NewImageName = $ImageNameWithoutExt . '-' . $RandomNum . '.' . $ImageExt;
+            $NewImageName = $ImageNameWithoutExt . '-' . $ImageExt;
 
             // Construct the full path for uploading
             $uploadPath = $output_dir . '/' . $NewImageName;

@@ -177,7 +177,7 @@
                                     </thead>
                                     <tbody>
                                         <?php
-                                        require "../Controllers/tour_ctrl.php";
+                                        require "../Controllers/application_ctrl.php";
                                         $result = get_all_Arecords_ctr();
 
                                         foreach ($result as $application) {
@@ -191,9 +191,9 @@
                                                     <td>" . $application['app_residence'] . "</td>
                                                     <td>" . $application['country'] . "</td>
                                                     <td>" . $application['city'] . "</td>
-                                                    <td>" . $application['app_CV'] . "</td>
+                                                    <td><a href='../application_uploads/" . $application['app_CV'] . "' download>" . $application['app_CV'] . "</a></td>
                                                     <td>" . $application['app_sOfPurpose'] . "</td>
-                                                    <td>" . $application['app_Pfolio'] . "</td>
+                                                    <td><a href='../application_uploads/" . $application['app_Pfolio'] . "' download>" . $application['app_Pfolio'] . "</a></td>
                                                     <td>";
                                             "</tr>";
                                         }

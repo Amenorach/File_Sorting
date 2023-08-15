@@ -1,6 +1,6 @@
 <?php 
 //connect to the user account class
-require_once(dirname(__FILE__)) . '/../Classes/application_class_class.php';
+require_once(dirname(__FILE__) . '/../Classes/application_class.php');
 
 //--INSERT--//
 // add to database

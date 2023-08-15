@@ -229,9 +229,9 @@ require("../Controllers/tour_ctrl.php");
                                                             // } else {
                                                             //     echo "No portfolio link available";
                                                             // }
-                                                            if (!empty($result['Pfolio'])) {
-                                                                $fileUrl = '../application_uploads/' . $result['Pfolio'];
-                                                                echo "<a href=\"$fileUrl\" download>" . $result['Pfolio'] . "</a>";
+                                                            if (!empty($result['app_Pfolio'])) {
+                                                                $fileUrl = '../application_uploads/' . $result['app_Pfolio'];
+                                                                echo "<a href=\"$fileUrl\" download>" . $result['app_Pfolio'] . "</a>";
                                                                 // echo "<a href=\"$fileUrl\" download>
                                                                 //         <button class=\"btn btn-success\">
                                                                 //             <i class=\"fa fa-download\"></i> Download Porfolio
